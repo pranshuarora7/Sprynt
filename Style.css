@@ -1,0 +1,31 @@
+* {
+  color: purple;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+}
+
+#title {
+  color:#1a1aff;
+  font-size: 50px;
+  background-color:#ffff0080;
+  border: 10px solid currentcolor;
+}
+
+div.container {
+  text-align: center;
+}
+
+ul.myUL {
+  display: inline-block;
+  text-align: left;
+}
+
+p {
+  width: 65%;
+}
+
+.alert-text {
+  color: red;
+}
