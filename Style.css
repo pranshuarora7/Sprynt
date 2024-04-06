@@ -4,7 +4,7 @@ body {
 }
 
 .header {
-  background: white;
+  background: rgb(16, 12, 240);
   display: flex;
   justify-content: space-between;
   padding: 5px;
@@ -12,7 +12,7 @@ body {
 
 .header ul a {
   text-decoration: none;
-  color: rebeccapurple;
+  color: rgb(157, 253, 197);
 }
 
 .header ul {
@@ -31,12 +31,20 @@ body {
   gap: 16px;
 }
 
+.header button {
+  border: none;
+  border-radius: 8px;
+  background: rgb(4, 255, 108);
+  color: white;
+  padding: 8px 24px;
+}
+
 .profile-image {
-  background: rebeccapurple;
-  box-shadow: inset 2px 2px 4px rgba(0, 0, 0, .5);
+  background: rgb(4, 255, 108);
   border-radius: 50%;
   width: 48px;
   height: 48px;
+  margin-right: 20px;
 }
 
 .logo img {
@@ -47,4 +55,89 @@ body {
 
 .FirstSection {
   display: flex;
+  justify-content: space-evenly;
+  gap: 150px;
+  padding: 30px 120px;
+  background-color: rgb(12, 73, 240);
+}
+
+.FirstSection img {
+  height: 300px;
+  border-radius: 30%;
+}
+
+.FirstSection p {
+  font-size: 20px;
+  color: white;
+}
+
+.FirstSection h1 {
+  color: white;
+}
+
+.FirstSection button {
+  font-size: 25px;
+  margin: 10px;
+  border-radius: 15%;
+  padding: 5px;
+  background-color: rgb(4, 255, 108);
+}
+
+.SecondSection {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin: 45px;
+}
+
+.SecondSection img {
+  width: 100px;
+  height: 100px;
+}
+
+.container {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 100px;
+  padding: 40px 190px;
+}
+
+.SecondSection a {
+  text-decoration: none;
+  color: rgb(4, 255, 108);
+  font-size: 25px;
+  text-align: center;
+}
+
+.ThirdSection {
+  background-color: #e5e7eb;
+  font-size: 26px;
+  font-style: italic;
+  font-style: #1f2937;
+  padding: 75px 250px;
+}
+
+.ThirdSection span {
+  text-align: right;
+  font-weight: 700;
+  margin-left: 840px;
+  font-size: 23px;
+}
+
+.footer {
+  background: rgb(16, 12, 240);
+  padding: 15px;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
+.footer .alert-text {
+  margin: 15px;
+}
+
+.footer a {
+  color: white;
+  text-decoration: none;
 }
