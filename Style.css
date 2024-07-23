@@ -138,6 +138,9 @@ blockquote {
     0 0 3em rgb(5, 171, 248);
   border-radius: 50%;
 }
+blockquote:hover {
+  background: rgb(43, 241, 43);
+}
 .ThirdSection span {
   text-align: right;
   font-weight: 700;
