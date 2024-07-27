@@ -4,26 +4,16 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Login</title>
+    <script src="signuppage/login.js" defer></script>
 </head>
 <body>
-    <form action="https://httpbin.org/post" method="post">
+    <form id="greet-form" action="signuppage/login.js" method="post">
         <div>
-          <label for="first_name">First Name:</label>
-          <input type="text" name="first_name" id="first_name">
+            <label for="username">What's your name?</label>
+            <input type="text" id="username" name="username">
+            <button type="button" class="greet-btn">Greet Me</button>
         </div>
-      
-        <div>
-          <label for="last_name">Last Name:</label>
-          <input type="text"  id="last_name">
-        </div>
-      
-        <div>
-          <label for="age">Age:</label>
-          <input type="number" name="age" id="age">
-        </div>
-      
-        <button type="submit">Submit</button>
-      </form>
-      
+        <h1 class="greeting"></h1>
+    </form>
 </body>
 </html>
