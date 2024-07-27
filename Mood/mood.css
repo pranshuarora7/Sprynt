@@ -1,3 +1,18 @@
+:root.dark {
+  --border-btn: 1px solid rgb(220, 220, 220);
+  --color-base-bg: rgb(18, 18, 18);
+  --color-base-text: rgb(240, 240, 240);
+  --color-btn-bg: rgb(36, 36, 36);
+}
+
+:root.light {
+  --border-btn: 1px solid rgb(36, 36, 36);
+  --color-base-bg: rgb(240, 240, 240);
+  --color-base-text: rgb(18, 18, 18);
+  --color-btn-bg: rgb(220, 220, 220);
+}
+
+
 .header  {
   font-family: monospace;
   background: papayawhip;
@@ -39,4 +54,21 @@ a {
 .list ul{
   height:200px;
   overflow-y:scroll;
+}
+
+
+body,
+.theme-toggle {
+  color: var(--color-base-text);
+}
+
+body {
+  background-color: var(--color-base-bg);
+  padding: 10px;
+}
+
+.theme-toggle {
+  background-color: var(--color-btn-bg);
+  font-size: 22px;
+  padding: 8px;
 }
