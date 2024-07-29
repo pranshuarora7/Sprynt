@@ -1,9 +1,7 @@
-// custom form validation
 class FormValidate {
 
     constructor(form, field) {
 
-        // active form
         this.form = form;
         this.form.noValidate = true;
 
@@ -143,5 +141,4 @@ contactForm.submit = e => {
     for (const [name, value] of fd.entries()) {
         console.log(name + ': ' + value);
     }
-
 }

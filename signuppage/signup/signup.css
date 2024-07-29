@@ -1,8 +1,17 @@
+:root {
+  --left-space: 48px;
+}
+
+body {
+  background-color: rgb(255, 255, 255);
+  margin: 0;
+}
 .header {
     background: rgb(81, 81, 116);
     display: flex;
     justify-content: space-between;
-    padding: 5px;
+    padding: 3px;
+    margin: 0;
 }
 
 .header ul a {
@@ -42,46 +51,148 @@
     margin-right: 20px;
 }
 
-.logo img {
+.logo > img {
     height: 70px;
     justify-content: center;
     align-items: center;
 }
-form > div{
-    width: 100%;
-    max-width: 15em;
-    margin: 1em auto;
-  }
-  
-  label, input {
-    display: block;
-    width: 100%;
-  }
-  
-  input {
-    padding: 0.5em;
-    border: 1px solid #666;
-    border-radius: 4px;
-  }
-  
-  button {
-    display: block;
-    margin: 0 auto;
-  }
-  
-  .help {
-    display: none;
-    font-size: 0.8em;
-    text-align: center;
-    margin: 0.2em 0 1em 0;
-    color: #c00;
-  }
-  
-  .invalid .help {
-    display: block;
-  }
-  
-  .invalid label, .invalid input {
-    color: #c00;
-    border-color: #c00;
-  }
+
+.content {
+  min-height: 100vh;
+  display: flex;
+}
+
+.image-section {
+  background-position: center center;
+  background-image: url("signupimages/bg.jpg");
+  background-size: cover;
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  color: white;
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 5.5rem;
+  font-family: "Norse Bold";
+  margin-top: 20vh;
+  padding: 16px 0;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+
+.banner img {
+  height: 125px;
+}
+
+.banner h2{
+  margin: 0;
+}
+
+.text-section {
+  flex: 5;
+  background-color: #f9fafb;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.text-section > p {
+  font-size: 1.4rem;
+  margin-left: var(--left-space);
+  font-weight: bold;
+  max-width: 80%;
+  margin-bottom: 8px;
+}
+
+.text-section p:first-child {
+  margin-top: 0;
+}
+
+.inputs-section {
+  color: black;
+  background-color: white;
+  margin-top: 32px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: var(--left-space);
+  box-shadow: 0 5px 5px 4px rgba(0, 0, 0, 0.1);
+}
+
+.inputs-section label {
+  font-size: 0.7rem;
+  letter-spacing: 0.1rem;
+  margin-bottom: 1px;
+}
+
+.inputs-section input {
+  box-sizing: border-box;
+  border: 1px solid #e5e7eb;
+  border-radius: 4px;
+  padding: 4px 8px;
+  width: 100%;
+  font-size: 1rem;
+  margin-right: 32px;
+}
+
+.inputs-section h3 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  margin-top: 0;
+  margin-bottom: 24px;
+}
+
+.inputs > div {
+  display: flex;
+  flex-wrap: wrap;
+  column-gap: 84px;
+  row-gap: 18px;
+  margin-bottom: 18px;
+}
+
+.inputs label {
+  display: block;
+}
+
+input.focus {
+  border: 1px solid blue;
+  box-shadow: 2px 1px 2px 2px rgba(0, 0, 0, 0.1);
+}
+
+input.error {
+  border: 1px solid red;
+}
+
+.error-message {
+  margin-top: 0;
+  font-size: 0.8rem;
+  color: red;
+}
+
+#create-account {
+  margin-left: var(--left-space);
+  margin-top: 32px;
+  border: none;
+  background-color: #596D48;
+  padding: 12px 48px;
+  border-radius: 8px;
+  box-shadow: 2px 5px 5px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  color: white;
+  font-weight: 700;
+  font-size: 1.1rem;
+}
+
+p.log-in {
+  font-weight: 400;
+  font-size: 1rem;
+  margin-top: 32px;
+}
+
+.log-in a {
+  color: #596D48;
+  font-weight: bold;
+  text-decoration: none;
+}
