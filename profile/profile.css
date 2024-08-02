@@ -44,3 +44,34 @@ body {
     justify-content: center;
     align-items: center;
 }
+
+.container{
+    margin-top: 40px;
+    margin-left: 150px;
+    display: inline-grid;
+    grid-template: 85px 85px 85px 85px 85px / 85px 85px 85px 85px 85px;
+    background-color: aqua;
+}
+.room{
+    font-size: 20px;
+    border: 1px solid blue;
+    text-align: center;
+}
+#living{
+    grid-area: 1/1/3/6;
+}
+#kitchen{
+    grid-area: 3/1/5/2;
+}
+#wash{
+    grid-area: 5/1/6/2;
+}
+#bedroom{
+    grid-area: 3/2/6/4;
+}
+#bathroom{
+    grid-area: 3/4/5/6;
+}
+#closet{
+    grid-area: 5/4/6/6;
+}
