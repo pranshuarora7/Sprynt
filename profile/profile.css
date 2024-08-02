@@ -45,33 +45,31 @@ body {
     align-items: center;
 }
 
-.container{
-    margin-top: 40px;
-    margin-left: 150px;
-    display: inline-grid;
-    grid-template: 85px 85px 85px 85px 85px / 85px 85px 85px 85px 85px;
-    background-color: aqua;
-}
-.room{
-    font-size: 20px;
-    border: 1px solid blue;
+.grid-container {
+    resize: both;
+    overflow: auto;
+    display: grid;
+    gap: 4px;
+    padding: 4px;
+    border: 1px solid grey;
+    background-color: skyblue;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  }
+  
+  .grid-item {
+    background-color: #444;
     text-align: center;
-}
-#living{
-    grid-area: 1/1/3/6;
-}
-#kitchen{
-    grid-area: 3/1/5/2;
-}
-#wash{
-    grid-area: 5/1/6/2;
-}
-#bedroom{
-    grid-area: 3/2/6/4;
-}
-#bathroom{
-    grid-area: 3/4/5/6;
-}
-#closet{
-    grid-area: 5/4/6/6;
-}
+    color: #ddd;
+    font-family: sans-serif;
+    font-size: 1.5rem;
+    padding: 12px;
+  }
+  
+  p {
+    margin: 12px auto 24px;
+  }
+  
+  img {
+    height: 60px;
+  }
