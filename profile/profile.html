@@ -2,67 +2,210 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="profile.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="profile.css">
+    <title>Profile</title>
 </head>
 
 <body>
-  <div class="container">
-    <div class="sidebar">
-      <div class="heading">
-        <img src="Assets/view-dashboard.svg">
-        <p>DASHBOARD</p>
-      </div>
-      <div class="list1">
-        <ul>
-          <li><img src="Assets/account-circle.svg">
-            <p> Home</p>
-          </li>
-          <li><img src="Assets/account-circle.svg">
-            <p> Profile</p>
-          </li>
-          <li><img src="Assets/account-circle.svg">
-            <p> Messages</p>
-          </li>
-          <li><img src="Assets/account-circle.svg">
-            <p> History</p>
-          </li>
-          <li><img src="Assets/account-circle.svg">
-            <p> Communities</p>
-          </li>
-          <li><img src="Assets/account-circle.svg">
-            <p> Discuss</p>
-          </li>
-        </ul>
-      </div>
-      <div class="list2">
-        <ul>
-          <li><img src="Assets/account-circle.svg">
-            <p> Settings</p>
-          </li>
-          <li><img src="Assets/account-circle.svg">
-            <p> Support</p>
-          </li>
-          <li><img src="Assets/account-circle.svg">
-            <p> Privacy</p>
-          </li>
-        </ul>
-      </div>
+    <div class="grid-container">
+        <div class="sidebar">
+            <div class="logo">
+                <img class="main-icon" src="Assets/view-dashboard.svg">
+                <span>Dashboard</span>
+            </div>
+            <div class="spacer1"></div>
+            <a href="#" class="nav-item">
+                <img class="icon" src="Assets/home.svg">
+                <span>Home</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img class="icon" src="Assets/card-account-details.svg">
+                <span>Profile</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img class="icon" src="Assets/message-reply.svg">
+                <span>Messages</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img class="icon" src="Assets/clock-time-three.svg">
+                <span>History</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img class="icon" src="Assets/file-multiple.svg">
+                <span>Tasks</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img class="icon" src="Assets/account-group.svg">
+                <span>Communities</span>
+            </a>
+            <div class="spacer2"></div>
+            <a href="#" class="nav-item">
+                <img class="icon" src="Assets/cog.svg">
+                <span>Settings</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img class="icon" src="Assets/help-box.svg">
+                <span>Support</span>
+            </a>
+            <a href="#" class="nav-item">
+                <img class="icon" src="Assets/shield-check.svg">
+                <span>Privacy</span>
+            </a>
+        </div>
+        <div class="header">
+            <div class="header-top">
+                <form action="" method="">
+                    <label for="search"><img class="icon" src="Assets/magnify.svg"></label>
+                    <input type="text" id="search" name="search">
+                </form>
+                <div class="controls">
+                    <img class="icon" src="Assets/bell.svg">
+                    <img class="profile-pic" src="Assets/account-circle.svg">
+                    <span> Guillaume Sorel </span>
+                </div>
+            </div>
+
+            <div class="header-bottom">
+                <div class="informations">
+                    <img class="profile-pic" src="Assets/account-circle.svg">
+                    <div class="text">
+                        <span class="greetings"> Hi there,</span>
+                        <span class="name">Guillaume Sorel (@guillaumesrl)</span>
+                    </div>
+                </div>
+                <div class="buttons">
+                    <button>New</button>
+                    <button>Upload</button>
+                    <button>Share</button>
+                </div>
+            </div>
+        </div>
+        <div class="main">
+            <div class="projects">
+                <h2>Your projects</h2>
+                <div class="project-grid">
+                    <div class="card">
+                        <h3>Super Cool Project</h3>
+                        <p class="project-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <div class="card-action">
+                            <img src="Assets/star-plus-outline.svg">
+                            <img src="Assets/eye-plus-outline.svg">
+                            <img src="Assets/source-fork.svg">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Super Cool Project</h3>
+                        <p class="project-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <div class="card-action">
+                            <img src="Assets/star-plus-outline.svg">
+                            <img src="Assets/eye-plus-outline.svg">
+                            <img src="Assets/source-fork.svg">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Super Cool Project</h3>
+                        <p class="project-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <div class="card-action">
+                            <img src="Assets/star-plus-outline.svg">
+                            <img src="Assets/eye-plus-outline.svg">
+                            <img src="Assets/source-fork.svg">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Super Cool Project</h3>
+                        <p class="project-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <div class="card-action">
+                            <img src="Assets/star-plus-outline.svg">
+                            <img src="Assets/eye-plus-outline.svg">
+                            <img src="Assets/source-fork.svg">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Super Cool Project</h3>
+                        <p class="project-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <div class="card-action">
+                            <img src="Assets/star-plus-outline.svg">
+                            <img src="Assets/eye-plus-outline.svg">
+                            <img src="Assets/source-fork.svg">
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Super Cool Project</h3>
+                        <p class="project-content">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                            eiusmod tempor incididunt
+                            ut labore et dolore magna aliqua. Ut enim ad minim veniam</p>
+                        <div class="card-action">
+                            <img src="Assets/star-plus-outline.svg">
+                            <img src="Assets/eye-plus-outline.svg">
+                            <img src="Assets/source-fork.svg">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-side">
+                <div class="announcements">
+                    <h2>announcements</h2>
+                    <div class="side-card">
+                        <div class="first">
+                            <h4>Site Maintenance</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt</p>
+                        </div>
+                        <div class="mid">
+                            <h4>Community Share Day</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt</p>
+                        </div>
+                        <div class="last">
+                            <h4>Updated privacy Policy</h4>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                                eiusmod tempor incididunt</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="trending">
+                    <h2>Trending</h2>
+                    <div class="side-card">
+                        <div class="ratings">
+                            <img class="profile-pic" src="Assets/account-circle.svg">
+                            <div class="text">
+                                <span class="name">@tegan</span>
+                                <span class="comment">World peace builder</span>
+                            </div>
+                        </div>
+                        <div class="ratings">
+                            <img class="profile-pic" src="Assets/account-circle.svg">
+                            <div class="text">
+                                <span class="name">@tegan</span>
+                                <span class="comment">World peace builder</span>
+                            </div>
+                        </div>
+                        <div class="ratings">
+                            <img class="profile-pic" src="Assets/account-circle.svg">
+                            <div class="text">
+                                <span class="name">@tegan</span>
+                                <span class="comment">World peace builder</span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
     </div>
-    <div class="search">
-      <p>Profile</p>
-    </div>
-    <div class="infobar">
-      <p>New</p>
-      <p>New</p>
-      <p>New</p>
-    </div>
-    <div class="content">
-      
-    </div>
-  </div>
 </body>
 
 </html>
