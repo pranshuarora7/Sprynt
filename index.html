@@ -11,111 +11,83 @@
 </head>
 
 <body>
-    <div class="header">
-        <div class="left">
-            <div class="logo">
-                <img src="Images/Logo.png" alt="Sprynt">
-            </div>
-            <ul class="links">
+    <header class="header">
+        <div class="logo">
+            <img src="Images/Logo.png" alt="Sprynt">
+        </div>
+        <nav>
+            <ul class="nav-links">
                 <li><a href="index.html">Home</a></li>
                 <li><a href="discuss/discuss.html">Discuss</a></li>
-                <li><a href="contact\contact.html">Contact</a></li>
+                <li><a href="contact/contact.html">Contact</a></li>
             </ul>
-        </div>
-        <div class="right">
-            <button class="notifications">
-                1 new notification
-            </button>
-            <div class="profile"><a href="profile/profile.html">
-                    <img src="Images/account-circle.svg" alt="Sprynt">
-            </a></div>
-        </div>
-    </div>
-    <div class="FirstSection">
-        <div class="left">
+            <div class="right">
+                <button class="notifications">1 new notification</button>
+                <div class="profile"><a href="profile/profile.html">
+                        <img src="Images/account-circle.svg" alt="Sprynt">
+                </a></div>
+            </div>
+        </nav>
+    </header>
+    <section class="first-section">
+        <div class="content">
             <h1>Welcome to Sprynt!!</h1>
-            <p>"Welcome to Sprynt - the ultimate destination for movie enthusiasts! Our website is dedicated to
-                providing you with comprehensive and insightful reviews of the latest movies, TV shows, and short films,
-                as well as offering a platform for passionate fans to connect and discuss their favorite films.
-            </p>
-            <button onclick="location.href='signuppage/signup/signup.html'">Sign Up</button>
-            <button onclick="location.href='signuppage/login/login.html'">Login</button>
+            <p>"Welcome to Sprynt - the ultimate destination for movie enthusiasts! Our website is dedicated to providing you with comprehensive and insightful reviews of the latest movies, TV shows, and short films, as well as offering a platform for passionate fans to connect and discuss their favorite films."</p>
+            <div class="buttons">
+                <button onclick="location.href='signuppage/signup/signup.html'">Sign Up</button>
+                <button onclick="location.href='signuppage/login/login.html'">Login</button>
+            </div>
         </div>
-        <div class="right">
-            <img src="Images/FirstSection.jpg">
+        <div class="image">
+            <img src="Images/FirstSection.jpg" alt="Welcome Image">
         </div>
-    </div>
-    <div class="SecondSection">
+    </section>
+    <section class="second-section">
         <h1>How are you feeling today?</h1>
-        <div class="container">
-            <div class="one">
-                <img src="Images/Happy.jpg" alt="barberry">
-                <div class="text">
-                    <a href="Mood/Happy.html">Happy</a>
-                </div>
+        <div class="mood-container">
+            <div class="mood">
+                <img src="Images/Happy.jpg" alt="Happy">
+                <a href="Mood/Happy.html">Happy</a>
             </div>
-            <div class="one">
-                <img src="Images/Angry.jpg" alt="chili">
-                <div class="text">
-                    <a href="Mood/Angry.html">Angry</a>
-                </div>
+            <div class="mood">
+                <img src="Images/Angry.jpg" alt="Angry">
+                <a href="Mood/Angry.html">Angry</a>
             </div>
-            <div class="one">
-                <img src="Images/Confused.jpg" pepper">
-                <div class="text">
-                    <a href="Mood/Confused.html">Confused</a>
-                </div>
+            <div class="mood">
+                <img src="Images/Confused.jpg" alt="Confused">
+                <a href="Mood/Confused.html">Confused</a>
             </div>
-            <div class="one">
-                <img src="Images/Inspired.jpg" alt="saffron">
-                <div class="text">
-                    <a href="Mood/Inspired.html">Inspired</a>
-                </div>
+            <div class="mood">
+                <img src="Images/Inspired.jpg" alt="Inspired">
+                <a href="Mood/Inspired.html">Inspired</a>
             </div>
-            <div class="one">
-                <img src="Images/Sad.jpg" alt="saffron">
-                <div class="text">
-                    <a href="Mood/Sad.html">Sad</a>
-                </div>
+            <div class="mood">
+                <img src="Images/Sad.jpg" alt="Sad">
+                <a href="Mood/Sad.html">Sad</a>
             </div>
-            <div class="one">
-                <img src="Images/Scared.jpg" alt="saffron">
-                <div class="text">
-                    <a href="Mood/Scared.html">Scared</a>
-                </div>
+            <div class="mood">
+                <img src="Images/Scared.jpg" alt="Scared">
+                <a href="Mood/Scared.html">Scared</a>
             </div>
         </div>
-    </div>
-    <div class="ThirdSection">
-        What Directors Think...
-
-        <div class="quote">
+    </section>
+    <section class="third-section">
+        <h2>What Directors Think...</h2>
+        <div class="quote-container">
             <blockquote>
-                <q>
-                    Talking about dreams is like talking about movies,
-                    since the cinema uses the language of dreams; years can pass in a second,
-                    and you can hop from one place to another. It's a language made of image.
-                    And in the real cinema, every object and every light means something, as in a dream.
-                </q>
-                <p>&mdash; Federico Fellini</p>
+                <p>"Talking about dreams is like talking about movies, since the cinema uses the language of dreams; years can pass in a second, and you can hop from one place to another. It's a language made of image. And in the real cinema, every object and every light means something, as in a dream."</p>
+                <cite>&mdash; Federico Fellini</cite>
             </blockquote>
             <blockquote>
-                <q>
-                    A film is - or should be - more like music than like fiction.
-                    It should be a progression of moods and feelings.
-                    The theme, what's behind the emotion, the meaning, all that comes later..
-                </q>
-                <p>&mdash; Stanley Kubrick</p>
+                <p>"A film is - or should be - more like music than like fiction. It should be a progression of moods and feelings. The theme, what's behind the emotion, the meaning, all that comes later."</p>
+                <cite>&mdash; Stanley Kubrick</cite>
             </blockquote>
         </div>
-
-    </div>
-    <div class="footer">
+    </section>
+    <footer class="footer">
         <div class="alert-text">Please agree to our terms of service.</div>
         Click<a href="https://www.theodinproject.com/about"> here </a>to learn WebD
-    </div>
-
-</html>
+    </footer>
 </body>
 
 </html>

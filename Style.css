@@ -1,165 +1,247 @@
-body {
-  background-color: rgb(255, 255, 255);
+/* Reset some default browser styles */
+* {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
+body {
+  font-family: 'Arial', sans-serif;
+  background: #f5f5f5;
+  color: #333;
+  line-height: 1.6;
+  overflow-x: hidden;
+}
+
+/* Header styling */
 .header {
-  background: rgb(93, 189, 253);
+  background: #b5fc72;
+  color: #50ff6d;
+  padding: 5px 20px;
   display: flex;
   justify-content: space-between;
-  padding: 5px;
+  align-items: center;
 }
 
-.header ul a {
+.header .logo img {
+  height: 75px;
+}
+
+.header nav {
+  display: flex;
+  align-items: center;
+  gap: 100px;
+}
+
+.header .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.header .nav-links li {
+  margin: 0 10px;
+}
+
+.header .nav-links a {
+  color: #1d04ff;
   text-decoration: none;
-  color: rgb(157, 253, 197);
+  font-size: 20px;
+  transition: color 0.3s;
 }
 
-.header ul {
-  list-style-type: none;
-  display: flex;
-  margin: 0;
-  margin-left: 80px;
-  gap: 50px;
-  font-size: 25px;
+.header .nav-links a:hover {
+  color: #fcb69f;
 }
 
-.header .left,
-.right {
+.header .right {
   display: flex;
   align-items: center;
-  gap: 16px;
 }
 
-.header button {
+.header .notifications {
   border: none;
-  border-radius: 8px;
-  background: rgb(4, 255, 108);
-  color: white;
-  padding: 8px 24px;
+  background: #1d04ff;
+  color: #fff;
+  padding: 8px 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: background 0.3s;
 }
 
-.logo img {
-  height: 70px;
-  justify-content: center;
-  align-items: center;
-}
-.profile img {
-  height: 50px;
-  justify-content: center;
-  align-items: center;
-  color: white;
-
+.header .notifications:hover {
+  background: #ffecd2;
 }
 
-.FirstSection {
+.header .profile img {
+  height: 40px;
+  border-radius: 50%;
+}
+
+/* First section styling */
+.first-section {
   display: flex;
+  align-items: center;
   justify-content: space-evenly;
-  gap: 150px;
-  padding: 30px 120px;
-  background-color: rgb(12, 73, 240);
+  gap: 200px;
+  padding: 60px 80px;
+  background: #fff;
 }
 
-.FirstSection img {
+.first-section .content {
+  max-width: 600px;
+  margin: 20px;
+  text-align: center;
+}
+
+.first-section h1 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.first-section p {
+  font-size: 1rem;
+  margin-bottom: 20px;
+}
+
+.first-section .buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+
+.first-section .buttons button {
+  padding: 10px 20px;
+  border: none;
+  background: #fcb69f;
+  color: #fff;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.first-section .buttons button:hover {
+  background: #ffecd2;
+}
+
+.first-section .image img {
   height: 300px;
   border-radius: 30%;
 }
 
-.FirstSection p {
-  font-size: 20px;
-  color: white;
-}
-
-.FirstSection h1 {
-  color: white;
-}
-
-.FirstSection button {
-  font-size: 25px;
-  margin: 10px;
-  border-radius: 15%;
-  padding: 5px;
-  background-color: rgb(4, 255, 108);
-}
-
-.SecondSection {
-  display: flex;
-  flex-direction: column;
+/* Second section styling */
+.second-section {
   text-align: center;
-  margin: 30px;
-  border: 10px solid rgb(47, 255, 134);
-  box-shadow: 0 0 50px 10px rgb(12, 73, 240);
-  border-radius: 12px;
-  background-image: url(Images/secondsectionbg.jpeg);
-  background-size: 100% 100%;
-  background-repeat: no-repeat;
+  padding: 60px 20px;
+  background: #333;
+  color: #fff;
 }
 
-.SecondSection img {
+.second-section h1 {
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.second-section .mood-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+}
+
+.second-section .mood {
+  flex: 1 1 150px;
+  max-width: 150px;
+  margin: 10px;
+}
+
+.second-section .mood img {
   width: 100px;
   height: 100px;
   border-radius: 50%;
+  transition: transform 0.3s;
 }
 
-.container {
-  display: flex;
-  justify-content: space-evenly;
-  align-items: center;
-  gap: 100px;
-  padding: 40px 190px;
+.second-section .mood img:hover {
+  transform: scale(1.05);
 }
 
-.SecondSection a {
+.second-section .mood a {
+  display: block;
+  margin-top: 10px;
+  color: #fcb69f;
+  font-size: 1rem;
   text-decoration: none;
-  color: rgb(4, 255, 108);
-  font-size: 25px;
+  transition: color 0.3s;
+}
+
+.second-section .mood a:hover {
+  color: #ffecd2;
+}
+
+/* Third section styling */
+.third-section {
+  padding: 60px 20px;
+  background: #fff;
   text-align: center;
 }
 
-.ThirdSection {  
-  background-color: #e5e7eb;
-  font-size: 50px;
-  font-style: italic;
-  font-style: #1f2937;
-  padding: 25px 20px;
-  text-align: center;
+.third-section h2 {
+  font-size: 2rem;
+  margin-bottom: 30px;
 }
-.quote{
+
+.third-section .quote-container {
   display: flex;
-  font-size: 25px;
+  flex-direction: column;
+  gap: 30px;
+}
 
+.third-section blockquote {
+  font-style: italic;
+  background: #f9f9f9;
+  padding: 20px;
+  border-left: 5px solid #fcb69f;
+  position: relative;
+  transition: background 0.3s, color 0.3s;
 }
-blockquote {
-  padding: 80px;
-  box-shadow:
-    inset -2em -2em 1em rgb(43, 241, 43),
-    0 0 0 2px white,
-    0 0 3em rgb(5, 171, 248);
-  border-radius: 50%;
+
+.third-section blockquote:hover {
+  background: #fcb69f;
+  color: #fff;
 }
-blockquote:hover {
-  background: rgb(43, 241, 43);
+
+.third-section blockquote p {
+  margin-bottom: 10px;
 }
-.ThirdSection span {
+
+.third-section blockquote cite {
+  display: block;
   text-align: right;
-  font-weight: 700;
-  margin-left: 840px;
-  font-size: 23px;
+  margin-top: 10px;
+  font-style: normal;
 }
 
+/* Footer styling */
 .footer {
-  background: rgb(16, 12, 240);
-  padding: 15px;
-  color: white;
+  background: #222;
+  color: #fff;
   text-align: center;
-  font-size: 18px;
+  padding: 20px;
 }
 
 .footer .alert-text {
-  margin: 15px;
+  margin-bottom: 10px;
 }
 
 .footer a {
-  color: white;
+  color: #fcb69f;
   text-decoration: none;
+  transition: color 0.3s;
+}
+
+.footer a:hover {
+  color: #ffecd2;
 }
