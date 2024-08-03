@@ -4,7 +4,7 @@ body {
 }
 
 .header {
-  background: rgb(16, 12, 240);
+  background: rgb(93, 189, 253);
   display: flex;
   justify-content: space-between;
   padding: 5px;
@@ -43,6 +43,13 @@ body {
   height: 70px;
   justify-content: center;
   align-items: center;
+}
+.profile img {
+  height: 50px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+
 }
 
 .FirstSection {
